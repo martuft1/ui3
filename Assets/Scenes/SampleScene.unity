@@ -274,7 +274,7 @@ GameObject:
   - component: {fileID: 934339817}
   - component: {fileID: 934339816}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: LoginMaster
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -292,6 +292,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90d54510572d86c4a8f5a8792a37f67e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  "contrase\xF1a": hola
+  contra: {fileID: 976203956}
 --- !u!4 &934339817
 Transform:
   m_ObjectHideFlags: 0
@@ -343,7 +345,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 3.6, y: 15}
+  m_AnchoredPosition: {x: 3.6, y: -15.000004}
   m_SizeDelta: {x: 221.98105, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &976203956
@@ -552,7 +554,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 10.000002, y: -3.4999876}
+  m_AnchoredPosition: {x: 10, y: 3.5}
   m_SizeDelta: {x: 0.052642822, y: -6.999996}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1458447276
@@ -706,7 +708,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 3.600006, y: -39.700012}
+  m_AnchoredPosition: {x: 3.5999756, y: -39.700012}
   m_SizeDelta: {x: -357.18192, y: -245.7836}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1531966227
@@ -902,7 +904,7 @@ GameObject:
   - component: {fileID: 1794232483}
   - component: {fileID: 1794232482}
   m_Layer: 5
-  m_Name: Button
+  m_Name: Btn_Aceptar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -967,7 +969,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1794232483}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 934339816}
+        m_MethodName: BotonAceptar
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1794232483
 MonoBehaviour:
   m_ObjectHideFlags: 0
